@@ -1,0 +1,10 @@
+<template>
+  <require from="./data-input-selector.css"></require>
+  <ul class="data-input-selector">
+    <li repeat.for="item of items"
+      class="xselect-options ${item === $parent.selectedItem ? 'selected': ''}"
+      click.delegate="onSelectOption($event, item)">
+      ${item[displayMember]}
+    </li>
+  </ul>
+</template>

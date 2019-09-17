@@ -1,0 +1,44 @@
+:root {
+  --font-family: "Monaco", "DejaVu Sans Mono", "Menlo", "Fira Mono";
+  --font-family-sansserif: Verdana, Arial, Helvetica, sans-serif;
+  --font-family-monospace: Lucida Console, Courier, monospace;
+
+  --btn-primary-bg-color: #2680C2;
+  --btn-primary-bg-color-hover: #0F609B;
+  --btn-primary-color: #DCEEFB;
+  --btn-primary-color-hover: #B6E0FE;
+}
+*,::after,::before { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--font-family-sansserif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  background-color: var(--primary-bg-color);
+}
+.sansserif {
+  font-family: var(--font-family-sansserif);
+}
+
+.share-host {
+  display: flex;
+  flex-flow: row;
+  height: 100%;
+  padding: 20px;
+}
+.share-host-editor {
+  background-color: lightgreen;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+}
+.share-host-preview {
+  background-color: whitesmoke;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+}

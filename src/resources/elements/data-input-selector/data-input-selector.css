@@ -1,0 +1,41 @@
+.data-input-selector {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 100%;
+  background-color: aliceblue;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  color: darkgray;
+  margin: 0;
+  padding: 0;
+}
+.data-input-selector li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  user-select: none;
+}
+.data-input-selector li:not(:last-of-type) {
+  border-right: 1px solid lightgray;
+}
+.data-input-selector li:hover:not(.selected) {
+  color: #34495e;
+}
+.data-input-selector li.selected {
+  background-color: var(--btn-primary-bg-color);
+  color: var(--btn-primary-color);
+}
+.data-input-selector li.selected:hover {
+  background-color: var(--btn-primary-bg-color-hover);
+  color: var(--btn-primary-color-hover);
+}

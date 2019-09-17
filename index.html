@@ -1,0 +1,79 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>data-input-selector</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <style>
+      html, body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafrex/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script checks to see if a redirect is present in the query string
+      // and converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search.slice(1).split('&').forEach(function(v) {
+            var a = v.split('=');
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (q.p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (q.p || '') +
+              (q.q ? ('?' + q.q) : '') +
+              l.hash
+            );
+          }
+        }
+      }(window.location))
+    </script>
+  </head>
+  <body>
+    <script src="https://unpkg.com/emmet-monaco-es/dist/emmet-monaco.min.js"></script>
+
+    <script type="importmap-shim">
+      {
+        "imports": {
+          "aurelia-binding": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-dependency-injection": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-event-aggregator": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-framework": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-history-browser": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-loader": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-logging": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-logging-console": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-metadata": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-pal": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-pal/": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-pal-browser": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-path": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-polyfills": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-router": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-task-queue": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-templating": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-templating-binding": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-templating-resources": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-templating-resources/": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js",
+          "aurelia-templating-router": "https://unpkg.com/aurelia-script@1.4.0/dist/aurelia_router.esm.min.js"
+        }
+      }
+    </script>
+    <script type="module-shim" src="src/main.js"></script>
+    <script defer src="https://unpkg.com/es-module-shims@0.2.15/dist/es-module-shims.min.js"></script>
+  </body>
+</html>
